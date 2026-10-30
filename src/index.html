@@ -3,47 +3,122 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Campus Bites | Home</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Home | Campus Bites</title>
+    <meta name="description" content="Campus Bites cafeteria: hot meals, snacks and drinks at student prices.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;800&family=DM+Sans:wght@400;500;700&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="../styles/style.css">
 </head>
-
 <body>
-
-    <header>
-        <h1>Campus Bites</h1>
-        <p>Fresh Food for Campus Life</p>
+    <header class="site-header">
+        <div class="container nav-wrap">
+            <a href="index.html" class="logo">Campus<span>Bites</span></a>
+            <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-label="Toggle menu">
+            <label for="nav-toggle" class="nav-burger" aria-hidden="true"><i></i></label>
+            <nav class="nav">
+                <a href="index.html" class="active">Home</a>
+                <a href="menu.html">Menu</a>
+                <a href="deals.html">Deals</a>
+                <a href="order.html">How to Order</a>
+                <a href="feedback.html">Feedback</a>
+            </nav>
+        </div>
     </header>
 
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="menu.html">Menu</a>
-        <a href="deals.html">Deals</a>
-        <a href="order.html">How to Order</a>
-        <a href="feedback.html">Feedback</a>
-    </nav>
-
     <main>
-        <section>
-            <h2>Welcome to Campus Bites</h2>
-            <p>Your campus destination for delicious and affordable food.</p>
+        <section class="hero">
+            <div class="container hero-grid">
+                <div>
+                    <p class="pill">Open today until 6:00 PM</p>
+                    <h1>Real food, student prices.</h1>
+                    <p class="lead">Campus Bites is your cafeteria for breakfast before class, a quick lunch between
+                        lectures, and chai when the day runs long.</p>
+                    <div class="btn-row">
+                        <a class="btn" href="menu.html">See the menu</a>
+                        <a class="btn btn-ghost" href="deals.html">Today's deals</a>
+                    </div>
+                </div>
+                <aside class="special-card">
+                    <h2>Today's special</h2>
+                    <p class="big">Chicken Biryani + Raita</p>
+                    <p class="price">PKR 350</p>
+                    <a href="deals.html">View all deals</a>
+                </aside>
+            </div>
         </section>
 
-        <section>
-            <h2>Our Location</h2>
-            <p>University Campus, Lahore</p>
+        <section class="section">
+            <div class="container info-grid">
+                <div class="card">
+                    <h3>Location</h3>
+                    <p>Ground Floor, Student Center, next to the main library.</p>
+                </div>
+                <div class="card">
+                    <h3>Opening hours</h3>
+                    <ul class="plain">
+                        <li><span>Monday – Friday</span><b>8:00 AM – 6:00 PM</b></li>
+                        <li><span>Saturday</span><b>9:00 AM – 3:00 PM</b></li>
+                        <li><span>Sunday</span><b>Closed</b></li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <h3>Contact</h3>
+                    <p>Call <a href="tel:+920000000000">+92 000 0000000</a> or <a href="feedback.html">send us
+                            feedback</a>.</p>
+                </div>
+            </div>
         </section>
 
-        <section>
-            <h2>Opening Hours</h2>
-            <p>Monday to Saturday: 8:00 AM - 8:00 PM</p>
+        <section class="section alt">
+            <div class="container">
+                <h2 class="section-title">Where to next?</h2>
+                <div class="link-grid">
+                    <a class="link-card" href="menu.html">
+                        <h3>Menu</h3>
+                        <p>Breakfast, fast food, main course and drinks.</p>
+                    </a>
+                    <a class="link-card" href="deals.html">
+                        <h3>Daily specials &amp; deals</h3>
+                        <p>Combos that save you money.</p>
+                    </a>
+                    <a class="link-card" href="order.html">
+                        <h3>How to order</h3>
+                        <p>Four simple steps and our pick-up rules.</p>
+                    </a>
+                    <a class="link-card" href="feedback.html">
+                        <h3>Feedback &amp; contact</h3>
+                        <p>Tell us what we can do better.</p>
+                    </a>
+                </div>
+            </div>
         </section>
     </main>
 
-    <footer>
-        <p>&copy; 2026 Campus Bites</p>
+    <footer class="site-footer">
+        <div class="container foot-grid">
+            <div>
+                <a href="index.html" class="logo">Campus<span>Bites</span></a>
+                <p>Fresh, affordable food for students and staff.</p>
+            </div>
+            <div>
+                <h4>Pages</h4>
+                <a href="menu.html">Menu</a>
+                <a href="deals.html">Deals</a>
+                <a href="order.html">How to order</a>
+                <a href="feedback.html">Feedback</a>
+            </div>
+            <div>
+                <h4>Visit us</h4>
+                <p>Ground Floor, Student Center<br>Mon–Sat, 8:00 AM – 6:00 PM</p>
+                <a href="tel:+920000000000">+92 000 0000000</a>
+            </div>
+        </div>
+        <p class="copy">&copy; 2026 Campus Bites. All rights reserved.</p>
     </footer>
-
 </body>
 
 </html>
