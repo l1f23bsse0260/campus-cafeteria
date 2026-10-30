@@ -13,8 +13,16 @@
   --head: "Bricolage Grotesque", "Segoe UI", system-ui, sans-serif;
   --body: "DM Sans", "Segoe UI", system-ui, sans-serif;
 }
+/* Dark Mode */
 @media (prefers-color-scheme: dark) {
-  :root { --ink:#eef0f7; --ink-soft:#a5adc4; --bg:#12162a; --panel:#1b2040; --tint:#171b34; --line:#2c3358; }
+  :root {
+    --ink: #eef0f7;
+    --ink-soft: #a5adc4;
+    --bg: #12162a;
+    --panel: #1b2040;
+    --tint: #171b34;
+    --line: #2c3358;
+  }
 }
  
 *, *::before, *::after { box-sizing: border-box; }
