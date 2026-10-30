@@ -1,37 +1,121 @@
+
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Campus Bites | Deals</title>
+    <title>Daily Specials & Deals | Campus Bites</title>
+
+    <!-- Shared CSS file -->
     <link rel="stylesheet" href="../styles/style.css">
 </head>
-
 <body>
 
-    <header>
-        <h1>Daily Specials and Deals</h1>
-        <p>Enjoy delicious food at student-friendly prices.</p>
+    <!-- Header -->
+    <header class="deals-header">
+        <h1>Campus Bites</h1>
+        <p>Delicious Food, Affordable Prices!</p>
     </header>
 
-    <nav>
+    <!-- Navigation -->
+    <nav class="deals-nav">
         <a href="index.html">Home</a>
         <a href="menu.html">Menu</a>
-        <a href="deals.html">Deals</a>
+        <a href="deals.html" class="active">Deals</a>
         <a href="order.html">How to Order</a>
         <a href="feedback.html">Feedback</a>
     </nav>
 
-    <main>
-        <h2>Special Offers Coming Soon</h2>
-        <p>Our team is preparing the daily specials and combo deals.</p>
+    <!-- Main Content -->
+    <main class="deals-container">
+
+        <h1>Daily Specials & Combo Deals</h1>
+        <p class="deals-intro">
+            Enjoy delicious meals at student-friendly prices.
+            Explore our daily special and exciting combo offers!
+        </p>
+
+        <!-- Daily Special -->
+        <section class="daily-special">
+            <h2>Today's Special</h2>
+            <h3>Chicken Biryani Special</h3>
+            <p>
+                A delicious serving of aromatic chicken biryani
+                served with fresh raita and salad.
+            </p>
+            <p class="deal-price">Only PKR 350</p>
+            <span class="special-label">Daily Special</span>
+        </section>
+
+        <!-- Combo Deals -->
+        <section class="combo-section">
+            <h2>Our Combo Deals</h2>
+
+            <div class="combo-container">
+
+                <!-- Combo 1 -->
+                <article class="combo-card">
+                    <h3>Student Combo</h3>
+                    <p>Perfect for students on a budget!</p>
+                    <ul>
+                        <li>1 Zinger Burger</li>
+                        <li>1 Regular Fries</li>
+                        <li>1 Soft Drink</li>
+                    </ul>
+                    <p class="deal-price">PKR 550</p>
+                </article>
+
+                <!-- Combo 2 -->
+                <article class="combo-card">
+                    <h3>Lunch Combo</h3>
+                    <p>A satisfying meal for lunchtime!</p>
+                    <ul>
+                        <li>1 Chicken Biryani</li>
+                        <li>1 Fresh Raita</li>
+                        <li>1 Soft Drink</li>
+                    </ul>
+                    <p class="deal-price">PKR 450</p>
+                </article>
+
+                <!-- Combo 3 -->
+                <article class="combo-card">
+                    <h3>Friends Combo</h3>
+                    <p>Share a tasty meal with your friends!</p>
+                    <ul>
+                        <li>2 Zinger Burgers</li>
+                        <li>2 Regular Fries</li>
+                        <li>2 Soft Drinks</li>
+                    </ul>
+                    <p class="deal-price">PKR 1,050</p>
+                </article>
+
+                <!-- Combo 4 -->
+                <article class="combo-card">
+                    <h3>Breakfast Combo</h3>
+                    <p>Start your day with a delicious breakfast!</p>
+                    <ul>
+                        <li>2 Eggs</li>
+                        <li>2 Parathas</li>
+                        <li>1 Cup of Tea</li>
+                    </ul>
+                    <p class="deal-price">PKR 300</p>
+                </article>
+
+            </div>
+        </section>
+
+        <p class="deals-note">
+            Note: All prices are in Pakistani Rupees (PKR).
+            Offers are subject to availability.
+        </p>
+
     </main>
 
-    <footer>
-        <p>&copy; 2026 Campus Bites</p>
+    <!-- Footer -->
+    <footer class="deals-footer">
+        <p>&copy; 2026 Campus Bites | University Cafeteria</p>
+        <p>Good Food, Great Deals, Happy Students!</p>
     </footer>
 
 </body>
-
 </html>
