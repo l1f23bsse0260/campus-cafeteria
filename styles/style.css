@@ -164,6 +164,39 @@ p { margin: 0 0 1rem; }
   * { transition: none !important; scroll-behavior: auto !important; }
 }
 
+/* Deals page additional styling */
+
+input,
+textarea,
+button {
+    padding: 10px;
+    font: inherit;
+}
+
+textarea {
+    min-height: 120px;
+}
+
+footer {
+    padding: 15px;
+    text-align: center;
+}
+
+@media (max-width: 600px) {
+    nav a {
+        display: block;
+        margin: 10px 0;
+    }
+
+    main {
+        padding: 15px;
+    }
+
+    header {
+        padding: 15px;
+    }
+}
+
 /* Responsive */
 @media (max-width: 900px) {
   .hero-grid, .contact-grid { grid-template-columns: 1fr; }
