@@ -1,121 +1,99 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Daily Specials & Deals | Campus Bites</title>
-
-    <!-- Shared CSS file -->
-    <link rel="stylesheet" href="../styles/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Deals | Campus Bites</title>
+  <meta name="description" content="Daily special and combo deals at Campus Bites.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;800&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../styles/style.css">
 </head>
 <body>
-
-    <!-- Header -->
-    <header class="deals-header">
-        <h1>Campus Bites</h1>
-        <p>Delicious Food, Affordable Prices!</p>
-    </header>
-
-    <!-- Navigation -->
-    <nav class="deals-nav">
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a href="index.html" class="logo">Campus<span>Bites</span></a>
+      <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-label="Toggle menu">
+      <label for="nav-toggle" class="nav-burger" aria-hidden="true"><i></i></label>
+      <nav class="nav">
         <a href="index.html">Home</a>
         <a href="menu.html">Menu</a>
         <a href="deals.html" class="active">Deals</a>
         <a href="order.html">How to Order</a>
         <a href="feedback.html">Feedback</a>
-    </nav>
-
-    <!-- Main Content -->
-    <main class="deals-container">
-
-        <h1>Daily Specials & Combo Deals</h1>
-        <p class="deals-intro">
-            Enjoy delicious meals at student-friendly prices.
-            Explore our daily special and exciting combo offers!
-        </p>
-
-        <!-- Daily Special -->
-        <section class="daily-special">
-            <h2>Today's Special</h2>
-            <h3>Chicken Biryani Special</h3>
-            <p>
-                A delicious serving of aromatic chicken biryani
-                served with fresh raita and salad.
-            </p>
-            <p class="deal-price">Only PKR 350</p>
-            <span class="special-label">Daily Special</span>
-        </section>
-
-        <!-- Combo Deals -->
-        <section class="combo-section">
-            <h2>Our Combo Deals</h2>
-
-            <div class="combo-container">
-
-                <!-- Combo 1 -->
-                <article class="combo-card">
-                    <h3>Student Combo</h3>
-                    <p>Perfect for students on a budget!</p>
-                    <ul>
-                        <li>1 Zinger Burger</li>
-                        <li>1 Regular Fries</li>
-                        <li>1 Soft Drink</li>
-                    </ul>
-                    <p class="deal-price">PKR 550</p>
-                </article>
-
-                <!-- Combo 2 -->
-                <article class="combo-card">
-                    <h3>Lunch Combo</h3>
-                    <p>A satisfying meal for lunchtime!</p>
-                    <ul>
-                        <li>1 Chicken Biryani</li>
-                        <li>1 Fresh Raita</li>
-                        <li>1 Soft Drink</li>
-                    </ul>
-                    <p class="deal-price">PKR 450</p>
-                </article>
-
-                <!-- Combo 3 -->
-                <article class="combo-card">
-                    <h3>Friends Combo</h3>
-                    <p>Share a tasty meal with your friends!</p>
-                    <ul>
-                        <li>2 Zinger Burgers</li>
-                        <li>2 Regular Fries</li>
-                        <li>2 Soft Drinks</li>
-                    </ul>
-                    <p class="deal-price">PKR 1,050</p>
-                </article>
-
-                <!-- Combo 4 -->
-                <article class="combo-card">
-                    <h3>Breakfast Combo</h3>
-                    <p>Start your day with a delicious breakfast!</p>
-                    <ul>
-                        <li>2 Eggs</li>
-                        <li>2 Parathas</li>
-                        <li>1 Cup of Tea</li>
-                    </ul>
-                    <p class="deal-price">PKR 300</p>
-                </article>
-
-            </div>
-        </section>
-
-        <p class="deals-note">
-            Note: All prices are in Pakistani Rupees (PKR).
-            Offers are subject to availability.
-        </p>
-
-    </main>
-
-    <!-- Footer -->
-    <footer class="deals-footer">
-        <p>&copy; 2026 Campus Bites | University Cafeteria</p>
-        <p>Good Food, Great Deals, Happy Students!</p>
-    </footer>
-
+      </nav>
+    </div>
+  </header>
+ 
+  <main>
+    <section class="page-head"><div class="container">
+      <h1>Daily specials &amp; deals</h1>
+      <p class="lead">Combos change rarely, the daily special changes every day.</p>
+    </div></section>
+ 
+    <section class="section"><div class="container">
+      <div class="special-card wide">
+        <div>
+          <h2>Today's special</h2>
+          <p class="big">Chicken Biryani + Raita + Drink</p>
+          <p>Available until sold out.</p>
+        </div>
+        <p class="price">PKR 350</p>
+      </div>
+ 
+      <h2 class="section-title">Combo deals</h2>
+      <div class="deal-grid">
+        <article class="card deal">
+          <h3>Student Combo</h3>
+          <ul><li>Zinger burger</li><li>Small fries</li><li>Soft drink</li></ul>
+          <p class="price">PKR 450</p>
+          <p class="small">Show your student ID.</p>
+        </article>
+        <article class="card deal featured">
+          <h3>Lunch Combo</h3>
+          <ul><li>Chicken karahi (half)</li><li>2 rotis</li><li>Salad and raita</li><li>Mint margarita</li></ul>
+          <p class="price">PKR 600</p>
+          <p class="small">Best value, 12 PM – 3 PM.</p>
+        </article>
+        <article class="card deal">
+          <h3>Breakfast Combo</h3>
+          <ul><li>Anda paratha</li><li>Karak chai</li></ul>
+          <p class="price">PKR 220</p>
+          <p class="small">Until 11:00 AM.</p>
+        </article>
+        <article class="card deal">
+          <h3>Sweet Break</h3>
+          <ul><li>Gulab jamun (2 pcs)</li><li>Chai</li></ul>
+          <p class="price">PKR 140</p>
+          <p class="small">All day.</p>
+        </article>
+      </div>
+      <div class="btn-row center"><a class="btn" href="order.html">How to order</a></div>
+    </div></section>
+  </main>
+ 
+  <footer class="site-footer">
+    <div class="container foot-grid">
+      <div>
+        <a href="index.html" class="logo">Campus<span>Bites</span></a>
+        <p>Fresh, affordable food for students and staff.</p>
+      </div>
+      <div>
+        <h4>Pages</h4>
+        <a href="menu.html">Menu</a>
+        <a href="deals.html">Deals</a>
+        <a href="order.html">How to order</a>
+        <a href="feedback.html">Feedback</a>
+      </div>
+      <div>
+        <h4>Visit us</h4>
+        <p>Ground Floor, Student Center<br>Mon–Sat, 8:00 AM – 6:00 PM</p>
+        <a href="tel:+920000000000">+92 000 0000000</a>
+      </div>
+    </div>
+    <p class="copy">&copy; 2026 Campus Bites. All rights reserved.</p>
+  </footer>
 </body>
 </html>
+ 
