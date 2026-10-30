@@ -71,3 +71,140 @@ footer {
         padding: 15px;
     }
 }
+
+
+/* =================================
+   CAMPUS BITES - DEALS PAGE
+================================= */
+
+.deals-header {
+    background-color: #783f04;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+.deals-header h1 {
+    margin-bottom: 8px;
+}
+
+.deals-nav {
+    background-color: #333;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+    padding: 15px;
+}
+
+.deals-nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.deals-nav a:hover,
+.deals-nav a.active {
+    color: #ffc107;
+}
+
+.deals-container {
+    max-width: 1100px;
+    margin: auto;
+    padding: 30px 20px;
+}
+
+.deals-container > h1,
+.deals-intro {
+    text-align: center;
+}
+
+.daily-special {
+    background-color: #fff3cd;
+    border: 2px solid #e0a800;
+    border-radius: 12px;
+    padding: 25px;
+    text-align: center;
+    margin: 30px 0;
+}
+
+.special-label {
+    display: inline-block;
+    background-color: #dc3545;
+    color: white;
+    padding: 7px 15px;
+    border-radius: 20px;
+    margin-top: 10px;
+}
+
+.combo-section h2 {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.combo-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+}
+
+.combo-card {
+    background-color: #f8f8f8;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    padding: 25px;
+    transition: transform 0.3s;
+}
+
+.combo-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.combo-card h3 {
+    color: #783f04;
+}
+
+.combo-card ul {
+    line-height: 1.8;
+}
+
+.deal-price {
+    color: #198754;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.deals-note {
+    text-align: center;
+    margin: 30px 0;
+}
+
+.deals-footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+
+    .combo-container {
+        grid-template-columns: 1fr;
+    }
+
+    .deals-nav {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .deals-container {
+        padding: 20px 12px;
+    }
+
+    .combo-card {
+        padding: 18px;
+    }
+}
