@@ -3,35 +3,151 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Campus Bites | Menu</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Menu | Campus Bites</title>
+    <meta name="description" content="Campus Bites menu with prices in PKR.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;800&family=DM+Sans:wght@400;500;700&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="../styles/style.css">
 </head>
 
-<body>
 
-    <header>
-        <h1>Our Menu</h1>
-        <p>Explore our food and drinks.</p>
+<body>
+    <header class="site-header">
+        <div class="container nav-wrap">
+            <a href="index.html" class="logo">Campus<span>Bites</span></a>
+            <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-label="Toggle menu">
+            <label for="nav-toggle" class="nav-burger" aria-hidden="true"><i></i></label>
+            <nav class="nav">
+                <a href="index.html">Home</a>
+                <a href="menu.html" class="active">Menu</a>
+                <a href="deals.html">Deals</a>
+                <a href="order.html">How to Order</a>
+                <a href="feedback.html">Feedback</a>
+            </nav>
+        </div>
     </header>
 
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="menu.html">Menu</a>
-        <a href="deals.html">Deals</a>
-        <a href="order.html">How to Order</a>
-        <a href="feedback.html">Feedback</a>
-    </nav>
-
     <main>
-        <h2>Menu Coming Soon</h2>
-        <p>Our team is preparing the complete menu.</p>
+        <section class="page-head">
+            <div class="container">
+                <h1>Menu</h1>
+                <p class="lead">All prices are in Pakistani Rupees (PKR).</p>
+                <div class="chips"><a href="#breakfast">Breakfast</a><a href="#fast-food">Fast Food</a><a
+                        href="#main-course">Main Course</a><a href="#beverages">Beverages &amp; Desserts</a></div>
+            </div>
+        </section>
+        <div class="container menu-grid section">
+            <section class="menu-block" id="breakfast">
+                <h2>Breakfast</h2>
+                <ul class="menu-list">
+                    <li>
+                        <div><b>Anda Paratha</b><small>Fried egg with a crispy paratha</small></div><span
+                            class="tag">PKR 180</span>
+                    </li>
+                    <li>
+                        <div><b>Halwa Puri</b><small>Two puri, halwa and chana</small></div><span class="tag">PKR
+                            250</span>
+                    </li>
+                    <li>
+                        <div><b>Omelette &amp; Toast</b><small>Two-egg omelette, buttered toast</small></div><span
+                            class="tag">PKR 200</span>
+                    </li>
+                    <li>
+                        <div><b>Chai (Karak)</b><small>Strong milk tea</small></div><span class="tag">PKR 60</span>
+                    </li>
+                </ul>
+            </section>
+            <section class="menu-block" id="fast-food">
+                <h2>Fast Food</h2>
+                <ul class="menu-list">
+                    <li>
+                        <div><b>Zinger Burger</b><small>Crispy chicken, mayo, lettuce</small></div><span class="tag">PKR
+                            350</span>
+                    </li>
+                    <li>
+                        <div><b>Club Sandwich</b><small>Chicken, egg, fries on the side</small></div><span
+                            class="tag">PKR 380</span>
+                    </li>
+                    <li>
+                        <div><b>Chicken Shawarma</b><small>Wrapped with garlic sauce</small></div><span class="tag">PKR
+                            250</span>
+                    </li>
+                    <li>
+                        <div><b>French Fries</b><small>Salted, with ketchup</small></div><span class="tag">PKR
+                            150</span>
+                    </li>
+                </ul>
+            </section>
+            <section class="menu-block" id="main-course">
+                <h2>Main Course</h2>
+                <ul class="menu-list">
+                    <li>
+                        <div><b>Chicken Biryani</b><small>With raita and salad</small></div><span class="tag">PKR
+                            300</span>
+                    </li>
+                    <li>
+                        <div><b>Chicken Karahi</b><small>Half portion, with 2 rotis</small></div><span class="tag">PKR
+                            450</span>
+                    </li>
+                    <li>
+                        <div><b>Daal Chawal</b><small>Daal mash, rice, salad</small></div><span class="tag">PKR
+                            220</span>
+                    </li>
+                    <li>
+                        <div><b>Chicken Pulao</b><small>Light and fragrant</small></div><span class="tag">PKR 280</span>
+                    </li>
+                </ul>
+            </section>
+            <section class="menu-block" id="beverages">
+                <h2>Beverages &amp; Desserts</h2>
+                <ul class="menu-list">
+                    <li>
+                        <div><b>Mint Margarita</b><small>Fresh mint and lemon cooler</small></div><span class="tag">PKR
+                            120</span>
+                    </li>
+                    <li>
+                        <div><b>Mango Shake</b><small>Seasonal mango, milk</small></div><span class="tag">PKR 200</span>
+                    </li>
+                    <li>
+                        <div><b>Gulab Jamun</b><small>Two pieces, served warm</small></div><span class="tag">PKR
+                            100</span>
+                    </li>
+                    <li>
+                        <div><b>Kheer</b><small>Creamy rice pudding cup</small></div><span class="tag">PKR 130</span>
+                    </li>
+                </ul>
+            </section>
+        </div>
+        <div class="container">
+            <p class="note">Looking for a better price? See our <a href="deals.html">combo deals</a>.</p>
+        </div>
     </main>
 
-    <footer>
-        <p>&copy; 2026 Campus Bites</p>
+    <footer class="site-footer">
+        <div class="container foot-grid">
+            <div>
+                <a href="index.html" class="logo">Campus<span>Bites</span></a>
+                <p>Fresh, affordable food for students and staff.</p>
+            </div>
+            <div>
+                <h4>Pages</h4>
+                <a href="menu.html">Menu</a>
+                <a href="deals.html">Deals</a>
+                <a href="order.html">How to order</a>
+                <a href="feedback.html">Feedback</a>
+            </div>
+            <div>
+                <h4>Visit us</h4>
+                <p>Ground Floor, Student Center<br>Mon–Sat, 8:00 AM – 6:00 PM</p>
+                <a href="tel:+920000000000">+92 000 0000000</a>
+            </div>
+        </div>
+        <p class="copy">&copy; 2026 Campus Bites. All rights reserved.</p>
     </footer>
-
 </body>
 
 </html>
